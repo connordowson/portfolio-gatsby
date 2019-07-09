@@ -1,0 +1,26 @@
+.navbar {
+    font-family: "Montserrat";
+    color: var(--white);
+    width: 100%;
+    padding: 32px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbarWrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbarName {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.navbarLinks {
+    margin-left: 24px;
+    font-size: 1.4rem;
+}

@@ -1,0 +1,22 @@
+.projectWrapper {
+    width: 100%;
+    padding: 24px 16px;
+    background: #FF743E;
+    border-radius: 2px;
+}
+
+.projectInfoText {
+    font-family: 'Montserrat';
+    color: var(--white);
+}
+
+.projectInfoTechnologies {
+    margin-top: 18px;
+}
+
+.projectInfoTechnologies a {
+    background: linear-gradient(blue, royalblue);
+    padding: 6px;
+    margin-right: 12px;
+    border-radius: 2px;
+}

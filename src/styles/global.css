@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+html {
+    background: #8FDBFF;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+}
+
+.homeHero {
+    background: linear-gradient(#281F37, #3D2F54, #534170, #6F5B90, #9682B7, #BEAED7, #DFD7ED, #F7F7F7);
+    /* background: #8FDBFF; */
+    background: linear-gradient(#8FDBFF, rgb(213, 239, 252));
+    height: 100vh;
+}

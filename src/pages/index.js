@@ -1,7 +1,16 @@
 import React from "react"
 
+import Hero from "./../components/Hero"
+import Navbar from "./../components/Navbar"
+import Project from "../components/Project"
+import Section from "../components/Section"
+
 export default () => (
-  <div style={{ color: "blue", fontFamily: "Arial" }}>
-    <h1> Hello world! </h1>
+  <div>
+    <Navbar />
+    <Hero />
+    <Section>
+      <Project />
+    </Section>
   </div>
 )
