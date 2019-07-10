@@ -1,22 +1,94 @@
 .projectWrapper {
     width: 100%;
-    padding: 24px 16px;
-    background: #FF743E;
+    padding: 32px 24px;
+    background: #F3724D;
     border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectInfo {
+    flex-grow: 3;
+}
+
+.projectInfoTitle {
+    font-size: 2rem;
+    color: #790133;
+}
+
+.projectInfoTitle,
+.projectInfoText,
+.projectInfoTechnologies {
+    margin-bottom: 32px;
+
 }
 
 .projectInfoText {
     font-family: 'Montserrat';
     color: var(--white);
-}
-
-.projectInfoTechnologies {
-    margin-top: 18px;
+    line-height: 1.6;
 }
 
 .projectInfoTechnologies a {
-    background: linear-gradient(blue, royalblue);
+    color: #790133;
     padding: 6px;
     margin-right: 12px;
     border-radius: 2px;
+    display: inline-flex;
+    align-content: center;
+    border: 2px solid #790133;
+    color: #f7f7f7;
+
+}
+
+.projectInfoTechnologies svg {
+    margin-right: 12px;
+    height: 20px;
+    fill: var(--white);
+}
+
+.projectLinksWrapper {}
+
+.projectLink {
+    transition: 0.15s ease-in;
+    display: inline-block;
+    border: 5px solid #790133;
+    color: #790133;
+    padding: 10px;
+    font-weight: 700;
+    margin-right: 18px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+    border-radius: 2px;
+
+}
+
+.projectLink:hover {
+    color: #f7f7f7;
+    cursor: pointer;
+}
+
+
+.projectLink::before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #790133;
+    width: 100%;
+    z-index: -1;
+    transition: 0.15s ease-in;
+    height: 0;
+}
+
+.projectLink:hover::before {
+    height: 100%;
+}
+
+.projectIllustration {}
+
+.projectIllustration svg {
+    flex-grow: 1;
+    height: 300px;
 }

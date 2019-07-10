@@ -1,6 +1,7 @@
 import React from "react"
 
 import heroStyles from "./../styles/hero.module.css"
+import HomeIllustration from "./HomeIllustration"
 
 export default function Hero() {
   return (
@@ -12,7 +13,9 @@ export default function Hero() {
           <h1> Cheltenham </h1>
         </div>
 
-        <div className={heroStyles.homeHeroIllustration}>illustration</div>
+        <div className={heroStyles.homeHeroIllustration}>
+          <HomeIllustration />
+        </div>
       </div>
     </div>
   )

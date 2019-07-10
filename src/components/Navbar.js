@@ -9,7 +9,7 @@ export default function Navbar() {
         <ul>
           <a className={navbarStyles.navbarLinks}> Projects </a>
           <a className={navbarStyles.navbarLinks}> About </a>
-          <a className={navbarStyles.navbarLinks}> GitHub </a>
+          <a className={navbarStyles.navbarLinks}> Contact </a>
         </ul>
       </div>
     </nav>

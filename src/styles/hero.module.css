@@ -1,7 +1,9 @@
 .homeHeroWrapper {
     width: 100%;
-    background: linear-gradient(#8FDBFF, #d5effc);
+    background: linear-gradient(#31102e, #790133, #F3724D, #f9f9f9);
     overflow: hidden;
+
+
 }
 
 .homeHero {
@@ -25,4 +27,7 @@
 }
 
 
-.homeHeroIllustration {}
+.homeHeroIllustration svg {
+    display: flex;
+    justify-content: flex-end;
+}
