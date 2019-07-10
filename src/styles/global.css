@@ -18,3 +18,8 @@ a {
     font-family: 'Montserrat', sans-serif;
     color: var(--white);
 }
+
+::selection {
+    color: #F3724D;
+    background: #790133;
+}

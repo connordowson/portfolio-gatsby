@@ -1,7 +1,7 @@
 import React from "react"
 
 export default function TechIcons(props) {
-  if (props.technology === "django") {
+  if (props.technology === "Django") {
     return (
       <svg
         version="1.1"
@@ -29,7 +29,7 @@ export default function TechIcons(props) {
     )
   }
 
-  if (props.technology === "postgres") {
+  if (props.technology === "PostgreSQL") {
     return (
       <svg
         fill="#790133"
@@ -98,7 +98,7 @@ export default function TechIcons(props) {
     )
   }
 
-  if (props.technology === "sass") {
+  if (props.technology === "Sass") {
     return (
       <svg
         fill="#790133"

@@ -5,6 +5,7 @@
     border-radius: 2px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 
 .projectInfo {
@@ -61,6 +62,7 @@
     text-transform: uppercase;
     z-index: 1;
     border-radius: 2px;
+    text-decoration: none;
 
 }
 
@@ -91,4 +93,5 @@
 .projectIllustration svg {
     flex-grow: 1;
     height: 300px;
+    padding: 40px;
 }
