@@ -3,9 +3,9 @@
     padding: 32px 24px;
     background: #F3724D;
     border-radius: 2px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     margin-bottom: 60px;
+    grid-template-columns: 1fr 360px;
 }
 
 .projectInfo {
@@ -21,31 +21,30 @@
 .projectInfoText,
 .projectInfoTechnologies {
     margin-bottom: 32px;
-
 }
 
 .projectInfoText {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     color: var(--white);
     line-height: 1.6;
 }
 
+.projectInfoTechnologies {
+    display: inline-flex;
+    align-items: center;
+}
+
 .projectInfoTechnologies a {
     color: #790133;
-    padding: 6px;
-    margin-right: 12px;
-    border-radius: 2px;
-    display: inline-flex;
-    align-content: center;
-    border: 2px solid #790133;
+    margin-right: 24px;
+    border-radius: 4px;
     color: #f7f7f7;
-
 }
 
 .projectInfoTechnologies svg {
-    margin-right: 12px;
-    height: 20px;
-    fill: var(--white);
+    margin-right: 8px;
+    height: 22px;
+    fill: #790133;
 }
 
 .projectLinksWrapper {}
@@ -53,26 +52,23 @@
 .projectLink {
     transition: 0.15s ease-in;
     display: inline-block;
-    border: 5px solid #790133;
-    color: #790133;
-    padding: 10px;
-    font-weight: 700;
+    background: #790133;
+    color: var(--white);
+    padding: 12px 16px;
     margin-right: 18px;
-    position: relative;
-    text-transform: uppercase;
-    z-index: 1;
+
     border-radius: 2px;
     text-decoration: none;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 
 }
 
 .projectLink:hover {
-    color: #f7f7f7;
     cursor: pointer;
+    transform: translateY(-1px);
 }
 
-
-.projectLink::before {
+/* .projectLink::before {
     content: "";
     bottom: 0;
     left: 0;
@@ -82,16 +78,19 @@
     z-index: -1;
     transition: 0.15s ease-in;
     height: 0;
-}
-
+} */
+/* 
 .projectLink:hover::before {
     height: 100%;
-}
+} */
 
-.projectIllustration {}
+.projectIllustration {
+    display: flex;
+    align-content: center;
+}
 
 .projectIllustration svg {
     flex-grow: 1;
-    height: 300px;
+    width: 100%;
     padding: 40px;
 }

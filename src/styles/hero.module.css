@@ -1,33 +1,68 @@
 .homeHeroWrapper {
     width: 100%;
-    background: linear-gradient(#31102e, #790133, #F3724D, #f9f9f9);
-    overflow: hidden;
-
+    /* background: linear-gradient(#31102e, #790133, #F3724D, #f9f9f9); */
+    background: #f9f9f9;
 
 }
 
+/* 
+.homeHeroWrapper::after {
+    content: "";
+    position: absolute;
+    height: 12px;
+    top: 0;
+    left: 0;
+    width: 100%;
+} */
+
 .homeHero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
     height: 100vh;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .homeHeroInfo,
-.homeHeroIllustration {
-    width: 50%;
+.homeHeroPhotoWrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .homeHeroInfo {
-    font-size: 2rem;
-    line-height: 1.2;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    padding: 120px;
 }
 
+.homeHeroInfoLink {
+    position: relative;
+    box-shadow: 0px -16px 0px 0px #FF007A inset;
+    transition: all 350ms ease-in-out;
+    padding: 0 6px;
+    transition-timing-function: cubic-bezier(0.69, 0.38, 0.17, 1);
+}
 
-.homeHeroIllustration svg {
-    display: flex;
-    justify-content: flex-end;
+.homeHeroInfoLink:hover {
+    box-shadow: 0px -60px 0px 0px #FF007A inset;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.homeHeroPhotoWrapper {
+    /* mix-blend-mode: overlay; */
+    background: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    background-blend-mode: lighten;
+    clip-path: url(#clip);
+    height: 100%;
+    width: 100%;
+}
+
+.homeHeroPhoto {
+    background: url('./../assets/images/me.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
 }

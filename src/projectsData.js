@@ -13,8 +13,18 @@ const projectsData = [
     title: "CALCIO! - football blog",
     info:
       "A football blog created using Ghost CMS. All design work such as the logos and branding was completed by myself. The themes for the pages were created using Handlebars templating engine, alongside Sass.",
-    technologies: ["Django", "Sass", "PostgreSQL"],
+    technologies: ["Ghost", "Sass"],
     demoLink: "https://club-calcio.com/",
+    githubLink: "#",
+  },
+
+  {
+    name: "algorhythm",
+    title: "Bar billiards scoring app",
+    info:
+      "A web app created to handle scoring of the confusing pub game bar billiards.",
+    technologies: ["React", "Sass", "Webpack"],
+    demoLink: "https://connordowson.com/barbilliards",
     githubLink: "#",
   },
 ]

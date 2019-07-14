@@ -1,6 +1,6 @@
 import React from "react"
-import Algorhythm from "./../assets/algorhythm-illustration.svg"
-import Calcio from "./../assets/calcio-illustration-01.svg"
+import Algorhythm from "./../assets/svg/algorhythm-illustration.inline.svg"
+import Calcio from "./../assets/svg/calcio-illustration.inline.svg"
 
 export default function ProjectIllustration(props) {
   if (props.project === "algorhythm") {
