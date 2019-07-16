@@ -5,6 +5,7 @@ import Hero from "./../components/Hero"
 import Navbar from "./../components/Navbar"
 import Project from "../components/Project"
 import Section from "../components/Section"
+import Heading from "../components/Heading"
 
 import projectsData from "./../projectsData.js"
 
@@ -16,7 +17,8 @@ export default () => (
     </Helmet>
     <Navbar />
     <Hero />
-    <Section>
+    <Section id="projects">
+      <Heading heading="Projects" />
       {projectsData.map((project, index) => {
         console.log(project)
         return (

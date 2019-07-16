@@ -1,7 +1,7 @@
 import React from "react"
 
 import TechIcons from "./../components/TechIcons"
-import ProjectIllustration from "./../components/ProjectIllustration"
+import ProjectImage from "./../components/ProjectImage"
 
 import projectStyles from "./../styles/project.module.css"
 
@@ -45,9 +45,15 @@ export default function Project(props) {
           </a>
         </div>{" "}
       </div>
-      <div className={projectStyles.projectIllustration}>
+      <div className={projectStyles.projectImageWrapper}>
         {/* component which returns an svg illustration depending on the props passed in */}
-        <ProjectIllustration project={props.name} />
+        <ProjectImage
+          className={projectStyles.projectImage}
+          project={props.name}
+          link={props.demoLink}
+        />
+
+        {/* <div className={projectStyles.test}></div> */}
       </div>
     </div>
   )

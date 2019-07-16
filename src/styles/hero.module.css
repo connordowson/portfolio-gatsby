@@ -1,7 +1,7 @@
 .homeHeroWrapper {
     width: 100%;
     /* background: linear-gradient(#31102e, #790133, #F3724D, #f9f9f9); */
-    background: #f9f9f9;
+    background: var(--white);
 
 }
 
@@ -36,25 +36,22 @@
 
 .homeHeroInfoLink {
     position: relative;
-    box-shadow: 0px -16px 0px 0px #FF007A inset;
-    transition: all 350ms ease-in-out;
-    padding: 0 6px;
-    transition-timing-function: cubic-bezier(0.69, 0.38, 0.17, 1);
+    transition: all 150ms ease-in-out;
+    font-weight: 700;
+    color: var(--pink);
 }
 
 .homeHeroInfoLink:hover {
-    box-shadow: 0px -60px 0px 0px #FF007A inset;
-    color: var(--white);
+    text-shadow: 3px 3px var(--black);
     cursor: pointer;
 }
 
 .homeHeroPhotoWrapper {
-    /* mix-blend-mode: overlay; */
-    background: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-    background-blend-mode: lighten;
-    clip-path: url(#clip);
+    background-image: linear-gradient(to top, #60fcf4 0%, #f83d78 100%);
+    /* background-blend-mode: lighten; */
     height: 100%;
     width: 100%;
+
 }
 
 .homeHeroPhoto {

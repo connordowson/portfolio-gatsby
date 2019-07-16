@@ -1,0 +1,31 @@
+.headingWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 24px;
+    font-size: 1.8rem;
+}
+
+.heading {
+    margin: 0 auto;
+    color: var(--pink);
+    font-weight: 700;
+    position: relative;
+    z-index: 5;
+}
+
+/* 
+adds a zigzag underneath headings
+.heading::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+    left: 0px;
+    height: 20px;
+    background: url('./../assets/svg/zigzag.svg');
+    background-position: center;
+    background-repeat: repeat-x;
+    z-index: 1;
+} */
