@@ -7,8 +7,10 @@
     margin-bottom: 60px;
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
     position: relative;
-    grid-column-gap: 22px;
-    /* background: linear-gradient(to top, #5ee7df 0%, #b490ca 100%); */
+}
+
+.projectWrapper:last-of-type {
+    margin-bottom: 0;
 }
 
 .projectWrapper::before {

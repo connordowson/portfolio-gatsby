@@ -7,6 +7,8 @@ import Project from "../components/Project"
 import Section from "../components/Section"
 import Heading from "../components/Heading"
 
+import About from "../components/About"
+
 import projectsData from "./../projectsData.js"
 
 export default () => (
@@ -32,6 +34,11 @@ export default () => (
           />
         )
       })}
+    </Section>
+
+    <Section>
+      <Heading heading="About Me" />
+      <About />
     </Section>
   </div>
 )
