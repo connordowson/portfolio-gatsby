@@ -1,14 +1,54 @@
 .aboutWrapper {
     width: 100%;
+
+}
+
+.aboutText {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background: #EDF2F7;
     border-radius: 8px;
     margin-bottom: 60px;
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
+    padding: 32px 36px;
 }
 
-.aboutWrapper p {
-    padding: 32px 36px;
+.aboutMusicGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 12px;
+}
 
+.aboutMusicTrack {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #EDF2F7;
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
+}
+
+.aboutMusicTrackTitle {
+    font-weight: 700;
+    /* font-size: 1.2rem; */
+    margin-bottom: 6px;
+}
+
+.aboutMusicTrackArtist {
+    opacity: 0.8;
+}
+
+.aboutMusicTrackArtwork {
+    position: absolute;
+    right: -8px;
+    top: 8px;
+    border-radius: 8px;
+    height: calc(100% - 16px);
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
+    cursor: pointer;
 }

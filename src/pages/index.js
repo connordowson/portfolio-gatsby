@@ -22,7 +22,6 @@ export default () => (
     <Section id="projects">
       <Heading heading="Projects" />
       {projectsData.map((project, index) => {
-        console.log(project)
         return (
           <Project
             title={project.title}
