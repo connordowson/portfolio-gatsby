@@ -15,10 +15,12 @@
 }
 
 .aboutMusicGrid {
+    width: calc(100% - 8px);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 12px;
+    width: 100%;
 }
 
 .aboutMusicTrack {
@@ -28,18 +30,20 @@
     justify-content: space-between;
     align-items: flex-start;
     background: #EDF2F7;
-    padding: 20px 10px;
+    padding: 20px 22px;
     border-radius: 8px;
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
 }
 
+
 .aboutMusicTrackTitle {
-    font-weight: 700;
+    font-weight: 600;
     /* font-size: 1.2rem; */
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .aboutMusicTrackArtist {
+    font-size: 0.9rem;
     opacity: 0.8;
 }
 
@@ -50,5 +54,101 @@
     border-radius: 8px;
     height: calc(100% - 16px);
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
+}
+
+.aboutMusicTrackArtwork:hover {
     cursor: pointer;
+    animation: bounce1 400ms ease-in-out forwards;
+}
+
+.aboutMusicSpotifyIcon {
+    border-radius: 50%;
+    position: absolute;
+    height: 16px;
+    right: 0;
+    bottom: 16px;
+}
+
+.aboutMusicTrackArtwork:hover+.aboutMusicSpotifyIcon {
+    cursor: pointer;
+    animation: bounce2 400ms ease-in-out forwards;
+    fill: var(--pink);
+}
+
+
+.aboutMusicAudio {
+    margin-top: 6px;
+    background: var(--black);
+    border-radius: 8px;
+    width: 70%;
+    height: 24px;
+}
+
+.aboutMusicLoadingWrapper {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EDF2F7;
+    padding: 20px 22px;
+    border-radius: 8px;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
+}
+
+.aboutMusicLoading {
+    margin-right: 12px;
+    font-weight: 700;
+    grid-column: 2;
+}
+
+.aboutMusicLoadSpinner {
+    height: 40px;
+    width: 40px;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes bounce1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-8px);
+
+    }
+
+    75% {
+        transform: translateY(2px);
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-14px);
+
+    }
+
+    75% {
+        transform: translateY(2px);
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }

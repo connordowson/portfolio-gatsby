@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
 
 import SpotifyTrack from './SpotifyTrack'
+import Loader from "./../assets/svg/loader.inline.svg"
+
 
 import aboutStyles from "./../styles/about.module.css"
 
@@ -44,10 +46,10 @@ const About = () => {
                     Array.from(topTracks).map((track, index) => {
 
                         return (
-                            <SpotifyTrack key={index} title={track.name} artist={track.artists[0].name} imageURL={track.album.images[1].url} />
+                            <SpotifyTrack key={index} title={track.name} artist={track.artists[0].name} imageURL={track.album.images[1].url} audioURL={track.preview_url} listenURL={track.external_urls.spotify} />
                         )
                     })
-                    : 'loading'}
+                    : <div className={aboutStyles.aboutMusicLoadingWrapper}> <h2 className={aboutStyles.aboutMusicLoading}> Loading music...</h2> <Loader className={aboutStyles.aboutMusicLoadSpinner} /> </div>}
             </div>
 
         </div>

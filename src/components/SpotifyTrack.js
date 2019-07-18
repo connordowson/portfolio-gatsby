@@ -1,4 +1,5 @@
 import React from "react"
+import SpotifyIcon from "./../assets/svg/spotify-icon.inline.svg"
 
 import aboutStyles from "./../styles/about.module.css"
 
@@ -8,10 +9,14 @@ export default function SpotifyTrack(props) {
       <a className={aboutStyles.aboutMusicTrackTitle}>{props.title}</a>
 
       <a className={aboutStyles.aboutMusicTrackArtist}>{props.artist} </a>
-      <img
-        className={aboutStyles.aboutMusicTrackArtwork}
-        src={props.imageURL}
-      />
+      <a href={props.listenURL} target="_blank">
+        {" "}
+        <img
+          className={aboutStyles.aboutMusicTrackArtwork}
+          src={props.imageURL}
+        />
+        <SpotifyIcon className={aboutStyles.aboutMusicSpotifyIcon} />
+      </a>
     </div>
   )
 }
