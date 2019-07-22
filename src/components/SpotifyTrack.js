@@ -9,7 +9,7 @@ export default function SpotifyTrack(props) {
       <a className={aboutStyles.aboutMusicTrackTitle}>{props.title}</a>
 
       <a className={aboutStyles.aboutMusicTrackArtist}>{props.artist} </a>
-      <a href={props.listenURL} target="_blank">
+      <a href={props.listenURL} target="_blank" rel="noopener noreferrer">
         {" "}
         <img
           className={aboutStyles.aboutMusicTrackArtwork}

@@ -6,7 +6,7 @@ import illustrationStyles from "./../styles/illustration.module.css"
 
 export default function HomeIllustration() {
   return (
-    <div classNameName={illustrationStyles.homeIllustration}>
+    <div className={illustrationStyles.homeIllustration}>
       <Image />
     </div>
   )

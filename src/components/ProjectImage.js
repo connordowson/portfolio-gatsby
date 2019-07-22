@@ -1,6 +1,7 @@
 import React from "react"
 import AlgorhythmImage from "./../assets/images/algorhythm.png"
 import CalcioImage from "./../assets/images/calcio.png"
+import BarBilliardsImage from "./../assets/images/barbilliards.png"
 
 import ExternalLinkIcon from "./../assets/svg/external-link.inline.svg"
 
@@ -13,6 +14,7 @@ export default function ProjectImage(props) {
         <a
           href={props.link}
           target="_blank"
+          rel="noopener noreferrer"
           className={projectStyles.projectImage}
           style={{ backgroundImage: "url(" + AlgorhythmImage + ")" }}
         >
@@ -29,8 +31,26 @@ export default function ProjectImage(props) {
         <a
           href={props.link}
           target="_blank"
+          rel="noopener noreferrer"
           className={projectStyles.projectImage}
           style={{ backgroundImage: "url(" + CalcioImage + ")" }}
+        >
+          {" "}
+        </a>
+        <ExternalLinkIcon className={projectStyles.projectImageExternalLink} />
+      </div>
+    )
+  }
+
+  if (props.project === "barbilliards") {
+    return (
+      <div>
+        <a
+          href={props.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={projectStyles.projectImage}
+          style={{ backgroundImage: "url(" + BarBilliardsImage + ")" }}
         >
           {" "}
         </a>

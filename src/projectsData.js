@@ -19,12 +19,12 @@ const projectsData = [
   },
 
   {
-    name: "algorhythm",
+    name: "barbilliards",
     title: "Bar billiards scoring app",
     info:
       "A web app created to handle scoring of the confusing pub game bar billiards. This was created by myself and my friend Fin during pair programming sessions, so scoring games wouldn't be so hard when we were at the pub.",
     technologies: ["React", "Sass", "Webpack"],
-    demoLink: "https://connordowson.com/barbilliards",
+    demoLink: "http://barbilliards.pub/",
     githubLink: "#",
   },
 ]

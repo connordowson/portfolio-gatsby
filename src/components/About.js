@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from "react"
 
-import SpotifyTrack from './SpotifyTrack'
 import Loader from "./../assets/svg/loader.inline.svg"
+
+import TopTracks from "./TopTracks"
 
 
 import aboutStyles from "./../styles/about.module.css"
 
 const About = () => {
 
-    const [topTracks, setTopTracks] = useState({})
+    const [topTracks, setTopTracks] = useState(false)
 
     useEffect(() => {
 
         async function fetchData() {
 
-            const res = await fetch("http://localhost/portfolio/spotify_top_tracks.php");
+            const res = await fetch("https://connordowson.com/spotify_data.php");
             res
                 .json()
                 .then(res => setTopTracks(res.items))
@@ -22,7 +23,6 @@ const About = () => {
         }
 
         fetchData()
-
 
     })
 
@@ -40,16 +40,12 @@ const About = () => {
 
             </div>
 
-            <div className={aboutStyles.aboutMusicGrid}>
+            <div >
 
                 {topTracks ?
-                    Array.from(topTracks).map((track, index) => {
-
-                        return (
-                            <SpotifyTrack key={index} title={track.name} artist={track.artists[0].name} imageURL={track.album.images[1].url} audioURL={track.preview_url} listenURL={track.external_urls.spotify} />
-                        )
-                    })
-                    : <div className={aboutStyles.aboutMusicLoadingWrapper}> <h2 className={aboutStyles.aboutMusicLoading}> Loading music...</h2> <Loader className={aboutStyles.aboutMusicLoadSpinner} /> </div>}
+                    <TopTracks topTracks={topTracks} />
+                    : <div className={aboutStyles.aboutMusicLoadingWrapper}> <h2 className={aboutStyles.aboutMusicLoading}> Loading music...</h2> <Loader className={aboutStyles.aboutMusicLoadSpinner} /> </div>
+                }
             </div>
 
         </div>
