@@ -6,8 +6,8 @@ import Navbar from "./../components/Navbar"
 import Project from "../components/Project"
 import Section from "../components/Section"
 import Heading from "../components/Heading"
-
 import About from "../components/About"
+import Footer from "../components/Footer"
 
 import projectsData from "./../projectsData.js"
 
@@ -19,7 +19,7 @@ export default () => (
         </Helmet>
         <Navbar />
         <Hero />
-        <Section id="projects">
+        <Section>
             <Heading heading="Projects" />
             {projectsData.map((project, index) => {
                 return (
@@ -39,5 +39,7 @@ export default () => (
             <Heading heading="About Me" />
             <About />
         </Section>
+        <Footer>
+        </Footer>
     </div>
 )

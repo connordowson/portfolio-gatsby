@@ -10,13 +10,31 @@ export default function Navbar() {
           {" "}
           <CDLogo />{" "}
         </a>
-        <ul>
-          <a href="#projects" className={navbarStyles.navbarLinks}>
+        <ul className={navbarStyles.navbarLinks}>
+          <li>
             {" "}
-            Projects{" "}
-          </a>
-          <a className={navbarStyles.navbarLinks}> About </a>
-          <a className={navbarStyles.navbarLinks}> Contact </a>
+            <a href="#projects"> Projects </a>
+          </li>
+          <li>
+            {" "}
+            <a> About </a>
+          </li>
+          <li>
+            {" "}
+            <a> Contact </a>
+          </li>
+          {/* <li>
+            {" "}
+            <a> GitHub </a>
+          </li>
+          <li>
+            {" "}
+            <a> dribbble </a>
+          </li>
+          <li>
+            {" "}
+            <a> LinkedIn </a>
+          </li> */}
         </ul>
       </div>
     </nav>
