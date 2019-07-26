@@ -1,7 +1,6 @@
 import React from "react"
 
 import heroStyles from "./../styles/hero.module.css"
-import HomeIllustration from "./HomeIllustration"
 
 export default function Hero() {
   return (
@@ -18,7 +17,6 @@ export default function Hero() {
         </div>
 
         <div className={heroStyles.homeHeroPhotoWrapper}>
-          <HomeIllustration />
           <div className={heroStyles.homeHeroPhoto}></div>
         </div>
       </div>

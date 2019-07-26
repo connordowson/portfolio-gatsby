@@ -1,6 +1,5 @@
 .aboutWrapper {
     width: 100%;
-
 }
 
 .aboutText {
@@ -23,6 +22,15 @@
     width: 100%;
 }
 
+@media screen and (max-width: 500px) {
+    .aboutMusicGrid {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 8px);
+    }
+}
+
+
 .aboutMusicTrack {
     display: flex;
     position: relative;
@@ -35,11 +43,22 @@
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
 }
 
+@media screen and (max-width: 500px) {
+    .aboutMusicTrack {
+        margin-bottom: 6px;
+        padding: 10px 12px;
+    }
+}
+
 
 .aboutMusicTrackTitle {
     font-weight: 600;
     /* font-size: 1.2rem; */
     margin-bottom: 4px;
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .aboutMusicTrackArtist {
@@ -54,6 +73,12 @@
     border-radius: 8px;
     height: calc(100% - 16px);
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
+}
+
+@media screen and (max-width: 500px) {
+    .aboutMusicTrackArtwork {
+        height: calc(100% - 16px);
+    }
 }
 
 .aboutMusicTrackArtwork:hover {

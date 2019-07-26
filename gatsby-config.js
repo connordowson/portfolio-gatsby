@@ -21,5 +21,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        useMozJpeg: false,
+        stripMetadata: true,
+        defaultQuality: 75,
+      },
+    },
   ],
 }

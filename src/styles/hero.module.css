@@ -1,24 +1,22 @@
 .homeHeroWrapper {
     width: 100%;
-    /* background: linear-gradient(#31102e, #790133, #F3724D, #f9f9f9); */
     background: var(--white);
-
 }
-
-/* 
-.homeHeroWrapper::after {
-    content: "";
-    position: absolute;
-    height: 12px;
-    top: 0;
-    left: 0;
-    width: 100%;
-} */
 
 .homeHero {
     display: grid;
-    grid-template-columns: 6fr 6fr;
+    grid-template-columns: 1fr 1fr;
     height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+
+    .homeHero {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+    }
+
 }
 
 .homeHeroInfo,
@@ -28,10 +26,30 @@
     align-items: center;
 }
 
+@media screen and (max-width: 500px) {
+
+    .homeHeroInfo,
+    .homeHeroPhotoWrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
 .homeHeroInfo {
     font-size: 1.2rem;
     line-height: 1.4;
     padding: 120px;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .homeHeroInfo {
+        font-size: 0.6rem;
+        padding: 20px;
+    }
+
 }
 
 .homeHeroInfoLink {
@@ -54,8 +72,16 @@
 
 }
 
+@media screen and (max-width: 500px) {
+
+    .homeHeroPhotoWrapper {
+        grid-row: 2;
+    }
+
+}
+
 .homeHeroPhoto {
-    background: url('./../assets/images/me.jpg');
+    background: url('./../assets/images/me1.jpeg');
     height: 100%;
     width: 100%;
     background-size: cover;

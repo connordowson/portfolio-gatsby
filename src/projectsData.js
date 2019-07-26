@@ -3,7 +3,7 @@ const projectsData = [
     name: "algorhythm",
     title: "algorhythm - dissertation",
     info:
-      "For my dissertation I created a site using Django which recommended new music to users based on their current listening habits. The Spotify API was used to discover which songs users had listened to the most over 3 different time ranges.",
+      "For my dissertation I created a site using Django which recommended new music to users based on their current listening habits. The Spotify API was used to discover which songs users had listened to the most over 3 different time ranges. I received a first for this project 😊.",
     technologies: ["Django", "Sass", "PostgreSQL"],
     demoLink: "https://algorhythm.connordowson.com/",
     githubLink: "https://github.com/connordowson/algorhythm",

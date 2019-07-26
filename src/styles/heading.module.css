@@ -15,17 +15,9 @@
     z-index: 5;
 }
 
-/* 
-adds a zigzag underneath headings
-.heading::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: -6px;
-    left: 0px;
-    height: 20px;
-    background: url('./../assets/svg/zigzag.svg');
-    background-position: center;
-    background-repeat: repeat-x;
-    z-index: 1;
-} */
+@media screen and (max-width: 500px) {
+    .heading {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}

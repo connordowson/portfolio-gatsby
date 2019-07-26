@@ -8,6 +8,12 @@
     z-index: 5;
 }
 
+@media screen and (max-width: 500px) {
+    .navbar {
+        padding: 16px;
+    }
+}
+
 .navbarWrapper {
     width: 1400px;
     display: flex;
@@ -16,11 +22,21 @@
     align-items: center;
 }
 
+@media screen and (max-width: 500px) {
+    .navbarWrapper {
+        width: 100%;
+    }
+}
+
 .navbarName svg {
     height: 54px;
 }
 
-.navbarLinks {}
+@media screen and (max-width: 500px) {
+    .navbarName svg {
+        height: 32px;
+    }
+}
 
 .navbarLinks li {
     margin-left: 24px;
@@ -32,11 +48,23 @@
     border-radius: 4px;
 }
 
+@media screen and (max-width: 500px) {
+    .navbarLinks li {
+        margin-left: 12px;
+        padding: 6px 8px;
+    }
+}
+
 .navbarLinks a {
     color: var(--white);
     text-decoration: none;
     transition: all 100ms ease-in-out;
+}
 
+@media screen and (max-width: 500px) {
+    .navbarLinks a {
+        font-size: 0.9rem;
+    }
 }
 
 .navbarLinks a:hover {
