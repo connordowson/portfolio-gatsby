@@ -64,6 +64,15 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 500px) {
+
+    .homeHeroInfoLink:hover {
+        text-shadow: 2px 2px var(--black);
+
+    }
+
+}
+
 .homeHeroPhotoWrapper {
     background-image: linear-gradient(to top, #60fcf4 0%, #f83d78 100%);
     /* background-blend-mode: lighten; */
