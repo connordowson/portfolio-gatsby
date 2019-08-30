@@ -11,8 +11,16 @@ export default function Hero() {
             {" "}
             Hi! My name is Connor Dowson and I'm a web developer based in
             Cheltenham. <br /> Why not have a look at some of my{" "}
-            <a className={heroStyles.homeHeroInfoLink}>work</a> or send me a{" "}
-            <a className={heroStyles.homeHeroInfoLink}>message?</a>{" "}
+            <a href="#projects" className={heroStyles.homeHeroInfoLink}>
+              work
+            </a>{" "}
+            or send me a{" "}
+            <a
+              href="mailto:connormwdowson@gmail.com"
+              className={heroStyles.homeHeroInfoLink}
+            >
+              message?
+            </a>{" "}
           </h1>
         </div>
 

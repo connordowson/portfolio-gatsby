@@ -1,100 +1,101 @@
 .homeHeroWrapper {
-    width: 100%;
-    background: var(--white);
+  width: 100%;
+  background: var(--white);
 }
 
 .homeHero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
 }
 
 @media screen and (max-width: 500px) {
 
-    .homeHero {
-        display: flex;
-        flex-direction: column;
-        height: 90vh;
-    }
+  .homeHero {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+  }
 
 }
 
 .homeHeroInfo,
 .homeHeroPhotoWrapper {
-    height: 100%;
-    display: flex;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 500px) {
 
-    .homeHeroInfo,
-    .homeHeroPhotoWrapper {
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
+  .homeHeroInfo,
+  .homeHeroPhotoWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
 
 }
 
 .homeHeroInfo {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    padding: 120px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  padding: 120px;
 }
 
 @media only screen and (max-width: 500px) {
 
-    .homeHeroInfo {
-        font-size: 0.6rem;
-        padding: 20px;
-    }
+  .homeHeroInfo {
+    font-size: 0.6rem;
+    padding: 20px;
+  }
 
 }
 
 .homeHeroInfoLink {
-    position: relative;
-    transition: all 150ms ease-in-out;
-    font-weight: 700;
-    color: var(--pink);
+  position: relative;
+  transition: all 150ms ease-in-out;
+  font-weight: 700;
+  color: var(--pink);
+  text-decoration: none;
 }
 
 .homeHeroInfoLink:hover {
-    text-shadow: 3px 3px var(--black);
-    cursor: pointer;
+  text-shadow: 3px 3px var(--black);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
 
-    .homeHeroInfoLink:hover {
-        text-shadow: 2px 2px var(--black);
+  .homeHeroInfoLink:hover {
+    text-shadow: 2px 2px var(--black);
 
-    }
+  }
 
 }
 
 .homeHeroPhotoWrapper {
-    background-image: linear-gradient(to top, #60fcf4 0%, #f83d78 100%);
-    /* background-blend-mode: lighten; */
-    height: 100%;
-    width: 100%;
+  background-image: linear-gradient(to top, #60fcf4 0%, #f83d78 100%);
+  /* background-blend-mode: lighten; */
+  height: 100%;
+  width: 100%;
 
 }
 
 @media screen and (max-width: 500px) {
 
-    .homeHeroPhotoWrapper {
-        grid-row: 2;
-    }
+  .homeHeroPhotoWrapper {
+    grid-row: 2;
+  }
 
 }
 
 .homeHeroPhoto {
-    background: url('./../assets/images/me1.jpeg');
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(100%);
-    mix-blend-mode: multiply;
+  background: url('./../assets/images/me.jpeg');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
 }

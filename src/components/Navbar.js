@@ -17,11 +17,11 @@ export default function Navbar() {
           </li>
           <li>
             {" "}
-            <a> About </a>
+            <a href="#aboutme"> About </a>
           </li>
           <li>
             {" "}
-            <a> Contact </a>
+            <a href="mailto:connormwdowson@gmail.com"> Contact </a>
           </li>
           {/* <li>
             {" "}

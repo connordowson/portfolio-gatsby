@@ -29,5 +29,18 @@ module.exports = {
         defaultQuality: 75,
       },
     },
+    {
+      resolve: "gatsby-plugin-favicon",
+      options: {
+        logo: "./src/favicon.svg",
+      },
+    },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
   ],
 }

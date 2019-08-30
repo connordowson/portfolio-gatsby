@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from 'gatsby'
 import { Helmet } from "react-helmet"
 
 import Hero from "./../components/Hero"
@@ -9,37 +10,53 @@ import Heading from "../components/Heading"
 import About from "../components/About"
 import Footer from "../components/Footer"
 
-import projectsData from "./../projectsData.js"
+export default ({ data }) => (
+  <div>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title> Connor Dowson </title>
+    </Helmet>
+    <Navbar />
+    <Hero />
+    <Section idName="projects">
+      <Heading heading="Projects" />
 
-export default () => (
-    <div>
-        <Helmet>
-            <meta charSet="utf-8" />
-            <title> Connor Dowson </title>
-        </Helmet>
-        <Navbar />
-        <Hero />
-        <Section>
-            <Heading heading="Projects" />
-            {projectsData.map((project, index) => {
-                return (
-                    <Project key={index}
-                        title={project.title}
-                        name={project.name}
-                        info={project.info}
-                        technologies={project.technologies}
-                        demoLink={project.demoLink}
-                        githubLink={project.githubLink}
-                    />
-                )
-            })}
-        </Section>
+      {data.allProjectsYaml.edges.map(({ node }, index) => {
+        return (
+          <Project key={index}
+            project={node}
+          />
+        )
 
-        <Section>
-            <Heading heading="About Me" />
-            <About />
-        </Section>
-        <Footer>
-        </Footer>
-    </div>
+      })}
+
+    </Section>
+
+    <Section idName="aboutme">
+      <Heading heading="About Me" />
+      <About />
+    </Section>
+    <Footer>
+    </Footer>
+  </div>
 )
+
+export const query = graphql`
+
+  query FirstQuery {
+    allProjectsYaml {
+      edges {
+        node {
+          index
+          title
+          project
+          info
+          technologies
+          demoLink
+          githubLink
+        }
+      }
+    }
+  }
+
+`
