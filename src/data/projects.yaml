@@ -1,4 +1,11 @@
 - index: 1
+  project: "portfolio"
+  title: "portfolio - this website!"
+  info: "This portfolio website was created using Gatsby to showcase my skills and any projects I have completed. To display what I've been listening to recently the fetch API is used to call a PHP file hosted on the web server."
+  technologies: ["Gatsby", "React"]
+  demoLink: "https://connordowson.com/"
+  githubLink: "https://github.com/connordowson/portfolio-gatsby"
+- index: 1
   project: "algorhythm"
   title: "algorhythm - dissertation"
   info: "For my dissertation I created a site using Django which recommended new music to users based on their current listening habits. The Spotify API was used to discover which songs users had listened to the most over 3 different time ranges. I received a first for this project 😊."

@@ -6,6 +6,7 @@ import SassIcon from "./../assets/svg/sass-icon.inline.svg"
 import ReactIcon from "./../assets/svg/react-icon.inline.svg"
 import GhostIcon from "./../assets/svg/ghost-icon.inline.svg"
 import WebpackIcon from "./../assets/svg/webpack-icon.inline.svg"
+import GatsbyIcon from "./../assets/svg/gatsby-icon.inline.svg"
 
 export default function TechIcons(props) {
   if (props.technology === "Django") {
@@ -30,5 +31,9 @@ export default function TechIcons(props) {
 
   if (props.technology === "Webpack") {
     return <WebpackIcon />
+  }
+
+  if (props.technology === "Gatsby") {
+    return <GatsbyIcon />
   }
 }
