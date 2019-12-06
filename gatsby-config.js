@@ -22,14 +22,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        useMozJpeg: false,
-        stripMetadata: true,
-        defaultQuality: 75,
-      },
-    },
-    {
       resolve: "gatsby-plugin-favicon",
       options: {
         logo: "./src/favicon.svg",
@@ -42,5 +34,12 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `here`,
+        accessToken: `here`
+      }
+    }
   ],
 }

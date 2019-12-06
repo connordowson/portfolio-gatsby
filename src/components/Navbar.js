@@ -12,16 +12,16 @@ export default function Navbar() {
         </a>
         <ul className={navbarStyles.navbarLinks}>
           <li>
-            {" "}
             <a href="#projects"> Projects </a>
           </li>
           <li>
-            {" "}
             <a href="#aboutme"> About </a>
           </li>
           <li>
-            {" "}
             <a href="mailto:connormwdowson@gmail.com"> Contact </a>
+          </li>
+          <li>
+            <a href="/blog"> Blog </a>
           </li>
           {/* <li>
             {" "}
