@@ -26,8 +26,7 @@ const About = () => {
       {" "}
       <div className={aboutStyles.aboutText}>
         <p>
-          Hi I'm Connor and I'm a graduate web developer looking for work in the
-          Cheltenham area. I'm interested in front-end development. When I'm not
+          Hi I'm Connor and I'm a front end web developer based in Bristol. When I'm not
           making websites I enjoy watching Liverpool and Exeter Chiefs, or
           listening to music. Check out what I've been listening to below!
         </p>

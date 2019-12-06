@@ -9,8 +9,8 @@ export default function Hero() {
         <div className={heroStyles.homeHeroInfo}>
           <h1>
             {" "}
-            Hi! My name is Connor Dowson and I'm a web developer based in
-            Cheltenham. <br /> Why not have a look at some of my{" "}
+            Hi! My name is Connor Dowson and I'm a front end web developer based in
+            Bristol. <br /> Why not have a look at some of my{" "}
             <a href="#projects" className={heroStyles.homeHeroInfoLink}>
               work
             </a>{" "}
