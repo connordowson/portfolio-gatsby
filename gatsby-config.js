@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-transformer-remark",
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
@@ -37,9 +38,9 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `here`,
-        accessToken: `here`
-      }
-    }
+        spaceId: ``,
+        accessToken: ``,
+      },
+    },
   ],
 }

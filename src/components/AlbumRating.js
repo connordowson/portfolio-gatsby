@@ -43,11 +43,10 @@ export default ({albumInfo}) => (
 
     <AlbumWrapper>
         <AlbumInfo>
-            <img height="120px" src={albumInfo.albumArt.file.url} />
+            <img height="100px" src={albumInfo.albumArt.file.url} />
             <div>
                 <h2> {albumInfo.title} </h2>
                 <h3> {albumInfo.artist} </h3>
-                <a> ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ </a>
             </div>
         </AlbumInfo>
 
