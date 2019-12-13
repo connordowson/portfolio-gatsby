@@ -1,9 +1,10 @@
-import React from "react"
+import React, { Children } from "react"
 import styled from "styled-components"
 
 const PostWrapper = styled.div`
   font-family: ${props => props.theme.typography.textFont};
   line-height: 1.6;
+  padding: 2em;
 
   /* Give each element a margin bottom, except for the last one */
   & > :not(:last-child) {
@@ -28,12 +29,6 @@ const PostWrapper = styled.div`
   }
 `
 
-const BlogPostContents = ({ postBody }) => (
-  <PostWrapper
-    dangerouslySetInnerHTML={{
-      __html: postBody,
-    }}
-  />
-)
+const BlogPostContents = ({ children }) => <PostWrapper>{children}</PostWrapper>
 
 export default BlogPostContents

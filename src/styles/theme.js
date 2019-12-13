@@ -6,7 +6,7 @@ export default {
   typography: { ...typography },
   responsive: {
     small: "35em",
-    medium: "50em",
+    medium: "55em",
     large: "70em",
   },
 

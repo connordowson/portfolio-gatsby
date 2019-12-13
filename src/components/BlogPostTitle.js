@@ -2,8 +2,10 @@ import React from "react"
 import styled from "styled-components"
 
 const HeadingWrapper = styled.div`
-  width: 800px;
+  width: 100%;
   margin: 0 auto;
+  background: #edf2f7;
+  padding: 2em;
 
   h1 {
     font-weight: 800;
