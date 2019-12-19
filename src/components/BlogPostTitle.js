@@ -1,23 +1,6 @@
 import React from "react"
-import styled from "styled-components"
+import Heading from "./Heading"
 
-const HeadingWrapper = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  background: #edf2f7;
-  padding: 2em;
-
-  h1 {
-    font-weight: 800;
-    font-size: 2.2em;
-    letter-spacing: -0.02em;
-  }
-`
-
-const BlogPostTitle = ({ title }) => (
-  <HeadingWrapper>
-    <h1>{title}</h1>
-  </HeadingWrapper>
-)
+const BlogPostTitle = ({ title }) => <Heading headingSize={1}>{title}</Heading>
 
 export default BlogPostTitle

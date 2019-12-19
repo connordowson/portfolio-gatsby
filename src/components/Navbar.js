@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import CDLogo from "./../assets/svg/cd-logo.inline.svg"
+import { Link } from "gatsby"
 
 const NavbarWrapper = styled.nav`
   position: sticky;
@@ -52,26 +53,26 @@ export default function Navbar({ pageType }) {
           {pageType === "blog" ? (
             <>
               <li>
-                <a href="/"> Portfolio </a>
+                <Link to="/"> Portfolio </Link>
               </li>
 
               <li>
-                <a href="/blog"> Blog </a>
+                <Link to="/blog"> Blog </Link>
               </li>
             </>
           ) : (
             <>
               <li>
-                <a href="#projects"> Projects </a>
+                <Link to="#projects"> Projects </Link>
               </li>
               <li>
-                <a href="#aboutme"> About </a>
+                <Link to="#aboutme"> About </Link>
               </li>
               <li>
-                <a href="mailto:connormwdowson@gmail.com"> Contact </a>
+                <Link to="mailto:connormwdowson@gmail.com"> Contact </Link>
               </li>
               <li>
-                <a href="/blog"> Blog </a>
+                <Link to="/blog"> Blog </Link>
               </li>
             </>
           )}

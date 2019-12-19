@@ -13,6 +13,7 @@ const AlbumWrapper = styled.div`
   border-radius: 8px;
   padding: 0.5em 1em;
   background: #edf2f7;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.04); */
 `
 const AlbumInfo = styled.div`
   display: flex;
@@ -50,8 +51,10 @@ export default props => (
       </div>
     </AlbumInfo>
 
-    <AlbumRating>
-      <p> {props.rating} </p>
-    </AlbumRating>
+    {props.rating && (
+      <AlbumRating>
+        <p> {props.rating} </p>
+      </AlbumRating>
+    )}
   </AlbumWrapper>
 )

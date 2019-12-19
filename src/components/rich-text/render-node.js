@@ -22,7 +22,7 @@ const options = {
       console.log(node)
       // if (!node) return null
       let file = node.data.target.fields.file
-      return <img src={file["en-GB"].url} />
+      return <img src={file["en-GB"].url} alt="" />
     },
 
     [INLINES.EMBEDDED_ENTRY]: node => {
