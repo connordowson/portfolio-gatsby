@@ -4,11 +4,14 @@ import styled from "styled-components"
 const PostWrapper = styled.div`
   font-family: ${props => props.theme.typography.textFont};
   line-height: 1.6;
-  padding: 2em;
 
   /* Give each element a margin bottom, except for the last one */
   & > :not(:last-child) {
     margin-bottom: 1rem;
+  }
+
+  & > div {
+    background: red;
   }
 
   h1,

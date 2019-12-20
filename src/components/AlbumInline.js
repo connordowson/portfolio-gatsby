@@ -9,11 +9,11 @@ const AlbumWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #e2e8f0;
+  /* border: 1px solid #e2e8f0; */
   border-radius: 8px;
   padding: 0.5em 1em;
+  margin: 2em 0;
   background: #edf2f7;
-  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.04); */
 `
 const AlbumInfo = styled.div`
   display: flex;

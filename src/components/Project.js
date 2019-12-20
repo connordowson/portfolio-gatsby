@@ -29,21 +29,19 @@ export default function Project({ project }) {
         <div className={projectStyles.projectLinksWrapper}>
           <a
             href={project.demoLink}
-            target="_blink"
+            target="_blank"
             className={projectStyles.projectLink}
           >
-            {" "}
-            View Demo{" "}
+            View Demo
           </a>
           <a
             href={project.githubLink}
-            target="_blink"
+            target="_blank"
             className={projectStyles.projectLink}
           >
-            {" "}
-            View Code{" "}
+            View Code
           </a>
-        </div>{" "}
+        </div>
       </div>
       <div className={projectStyles.projectImageWrapper}>
         {/* component which returns an svg illustration depending on the project passed in */}

@@ -1,15 +1,15 @@
 import React from "react"
-import AlbumRating from "./../AlbumRating"
+import AlbumInline from "../AlbumInline"
 
 const RenderEmbeddedContent = ({ fields, sys }) => {
   const type = sys.contentType.sys.id
 
   if (type === "album") {
     return (
-      <AlbumRating
+      <AlbumInline
         title={fields.title["en-GB"]}
         artist={fields.artist["en-GB"]}
-        rating={fields.rating["en-GB"]}
+        rating={fields.rating ? fields.rating["en-GB"] : false}
         albumArt={fields.albumArt["en-GB"].fields.file["en-GB"].url}
       />
     )

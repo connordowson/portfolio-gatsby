@@ -8,7 +8,7 @@ import Container from "./../components/Container"
 
 import Navbar from "./../components/Navbar"
 import BlogPostContainer from "./../components/BlogPostContainer"
-import BlogPostTitle from "../components/BlogPostTitle"
+import Heading from "./../components/Heading"
 import BlogPostHero from "../components/BlogPostHero"
 import BlogPostDetails from "../components/BlogPostDetails"
 import BlogPostContents from "./../components/BlogPostContents"
@@ -36,7 +36,7 @@ const blogPost = ({ data }) => {
       <Navbar pageType="blog" />
       <Container>
         <BlogPostContainer>
-          <BlogPostTitle title={title} />
+          <Heading headingSize={1}>{title}</Heading>
           <BlogPostHero heroImage={heroImage.fluid} />
           <BlogPostDetails datePublished={publishDate} tags={tags} />
           <BlogPostContents>
