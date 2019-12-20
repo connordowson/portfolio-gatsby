@@ -1,6 +1,6 @@
 # Connor Dowson Portfolio
 
-[connordowson.com](https://connordowson.com)
+[https://connordowson.com](https://connordowson.com)
 
 New portfolio created using Gatsby
 
