@@ -3,7 +3,7 @@ import styled from "styled-components"
 import CDLogo from "./../assets/svg/cd-logo.inline.svg"
 import { Link } from "gatsby"
 
-const NavbarWrapper = styled.nav`
+const NavbarWrapper = styled.header`
   position: sticky;
   z-index: 2;
   top: 0;
@@ -18,7 +18,7 @@ const NavbarWrapper = styled.nav`
   }
 `
 
-const NavbarContents = styled.div`
+const NavbarContents = styled.nav`
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -30,15 +30,14 @@ const NavbarContents = styled.div`
     display: inline;
     font-size: 1.2em;
     text-decoration: none;
-    padding: 12px 16px;
+    padding: 0.8em 1em;
     background: ${props => props.theme.colors.pink};
-    border-radius: 4px;
+    border-radius: 8px;
   }
 
   ul li a {
     color: ${props => props.theme.colors.white};
     text-decoration: none;
-    transition: all 100ms ease-in-out;
   }
 `
 
@@ -46,9 +45,9 @@ export default function Navbar({ pageType }) {
   return (
     <NavbarWrapper>
       <NavbarContents>
-        <a>
+        <Link to="/">
           <CDLogo />
-        </a>
+        </Link>
         <ul>
           {pageType === "blog" ? (
             <>

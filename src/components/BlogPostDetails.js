@@ -5,7 +5,6 @@ import { FaRegCalendarAlt, FaTags } from "react-icons/fa"
 const DetailsWrapper = styled.div`
   width: 100%;
   padding: 2em;
-  background: #edf2f7;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +20,7 @@ const PostDetailsContainer = styled.div`
   svg {
     margin-right: 0.4em;
     color: ${props =>
-      (props.pinkIcon ? props.theme.colors.pink : props.theme.colors.black)};
+      props.pinkIcon ? props.theme.colors.pink : props.theme.colors.black};
   }
 `
 

@@ -9,16 +9,16 @@ const LinkWrapper = styled.div`
     font-size: 2em;
     font-weight: bold;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
       color: ${props => props.theme.colors.pink};
-      transition: all 0.1s ease-in-out;
     }
   }
 
   /* Give each element a margin bottom, except for the last one */
   & > :not(:last-child) {
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
   }
 `
 

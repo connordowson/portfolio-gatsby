@@ -6,7 +6,6 @@ import { FaGithub, FaEnvelope } from "react-icons/fa"
 const AuthorWrapper = styled.div`
   width: 100%;
   padding: 2em;
-  background: #edf2f7;
   display: flex;
   justify-content: space-between;
   align-items: center;
