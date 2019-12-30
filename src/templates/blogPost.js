@@ -31,12 +31,15 @@ const blogPost = ({ data }) => {
     <Layout>
       <Helmet>
         <title>{title}</title>
+        <meta charSet="utf-8" />
       </Helmet>
 
       <Navbar pageType="blog" />
       <Container>
         <BlogPostContainer>
-          <Heading headingSize={1}>{title}</Heading>
+          <div>
+            <Heading headingSize={1}>{title}</Heading>
+          </div>
           <BlogPostHero heroImage={heroImage.fluid} />
           <BlogPostDetails datePublished={publishDate} tags={tags} />
           <BlogPostContents>

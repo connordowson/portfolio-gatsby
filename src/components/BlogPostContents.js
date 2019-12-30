@@ -10,10 +10,6 @@ const PostWrapper = styled.div`
     margin-bottom: 1rem;
   }
 
-  & > div {
-    background: red;
-  }
-
   h1,
   h2,
   h3 {

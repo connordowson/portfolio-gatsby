@@ -9,6 +9,7 @@ const AuthorWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: ${props => props.theme.colors.textFont};
 
   p {
     font-size: 1.2em;
@@ -41,6 +42,7 @@ const AuthorLinks = styled.ul`
     a {
       font-size: 1.4em;
       transition: all 0.2s ease-in-out;
+      color: ${props => props.theme.colors.textColor};
       &:hover {
         color: ${props => props.theme.colors.pink};
       }

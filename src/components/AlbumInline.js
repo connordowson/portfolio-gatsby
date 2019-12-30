@@ -2,18 +2,16 @@ import React from "react"
 import styled from "styled-components"
 
 const AlbumWrapper = styled.div`
-  background: ${props => props.theme.colors.white};
+  background: ${props => props.theme.colors.bg200};
   display: block;
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid #e2e8f0; */
   border-radius: 8px;
   padding: 0.5em 1em;
   margin: 2em 0;
-  background: #edf2f7;
 `
 const AlbumInfo = styled.div`
   display: flex;

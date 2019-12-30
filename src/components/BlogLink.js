@@ -2,14 +2,16 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { FaRegCalendarAlt } from "react-icons/fa"
+import { useSpring, animated } from "react-spring"
 
-const LinkWrapper = styled.div`
+const LinkWrapper = styled(animated.div)`
   a {
-    display: block;
+    display: inline-block;
     font-size: 2em;
     font-weight: bold;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    color: ${props => props.theme.colors.textColor};
 
     &:hover {
       color: ${props => props.theme.colors.pink};
@@ -32,7 +34,6 @@ const PostDate = styled.div`
 
 const BlogLink = ({ post }) => {
   const { title, slug, publishDate, description } = post
-
   return (
     <LinkWrapper>
       <Link to={`/blog/${slug}`}>{title}</Link>

@@ -1,8 +1,6 @@
-import colors from "./colors"
 import typography from "./typography"
 
 export default {
-  colors: { ...colors },
   typography: { ...typography },
   responsive: {
     small: "35em",

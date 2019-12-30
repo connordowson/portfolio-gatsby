@@ -35,4 +35,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     path: `/blog/`,
     component: require.resolve("./src/templates/allBlogPosts.js"),
   })
+
+  createPage({
+    path: `/`,
+    component: require.resolve("./src/templates/index.js"),
+  })
 }
