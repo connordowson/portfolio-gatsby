@@ -24,17 +24,22 @@ const ToggleButton = styled(animated.div)`
   width: 32px;
   border-radius: 50%;
   top: 0px;
-  right: 32px;
   background: ${props => props.theme.colors.pink};
   z-index: 5;
   cursor: pointer;
   transition: none;
 `
+
 const ThemeToggle = () => {
   const { isDark, toggleTheme, hasToggled } = useContext(ThemeContext)
   const animation = useSpring({
-    right: isDark ? 32 : 0,
+    right: isDark ? 32 : -1,
   })
+
+  // Style to position the toggle button on page load depending on which theme has been previously selected
+  const hasntToggledStyles = {
+    right: `${isDark ? "32px" : "-1px"}`,
+  }
 
   return (
     <>
@@ -43,7 +48,7 @@ const ThemeToggle = () => {
         <span role="img">🌙</span>
         <ToggleButton
           onClick={toggleTheme}
-          style={hasToggled ? animation : {}}
+          style={hasToggled ? animation : hasntToggledStyles}
         />
       </ToggleWrapper>
     </>

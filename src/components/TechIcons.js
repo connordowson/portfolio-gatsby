@@ -8,32 +8,20 @@ import GhostIcon from "./../assets/svg/ghost-icon.inline.svg"
 import WebpackIcon from "./../assets/svg/webpack-icon.inline.svg"
 import GatsbyIcon from "./../assets/svg/gatsby-icon.inline.svg"
 
-export default function TechIcons(props) {
-  if (props.technology === "Django") {
+export default function TechIcons({ technology }) {
+  if (technology === "Django") {
     return <DjangoIcon />
-  }
-
-  if (props.technology === "PostgreSQL") {
+  } else if (technology === "PostgreSQL") {
     return <PostgresIcon />
-  }
-
-  if (props.technology === "Sass") {
+  } else if (technology === "Sass") {
     return <SassIcon />
-  }
-
-  if (props.technology === "React") {
+  } else if (technology === "React") {
     return <ReactIcon />
-  }
-
-  if (props.technology === "Ghost") {
+  } else if (technology === "Ghost") {
     return <GhostIcon />
-  }
-
-  if (props.technology === "Webpack") {
+  } else if (technology === "Webpack") {
     return <WebpackIcon />
-  }
-
-  if (props.technology === "Gatsby") {
+  } else if (technology === "Gatsby") {
     return <GatsbyIcon />
-  }
+  } else return null
 }

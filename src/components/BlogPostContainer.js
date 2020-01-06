@@ -4,6 +4,11 @@ import styled from "styled-components"
 const PostWrapper = styled.article`
   border-block-start: 8px solid ${props => props.theme.colors.pink};
   overflow: hidden;
+  background: ${props => props.theme.colors.bg100};
+  color: ${props => props.theme.colors.textColor};
+  margin: 8em auto 0 auto;
+  border-radius: 8px;
+  box-shadow: ${props => props.theme.shadows.large};
 
   max-width: 50em;
   @media (max-width: ${props => props.theme.responsive.large}) {
@@ -17,12 +22,6 @@ const PostWrapper = styled.article`
   @media (max-width: ${props => props.theme.responsive.small}) {
     width: 100%;
   }
-  background: ${props => props.theme.colors.bg100};
-  color: ${props => props.theme.colors.textColor};
-  margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: ${props => props.theme.shadows.large};
-  transition: all 0.3s ease-in-out;
 
   & > div {
     padding: 2em;

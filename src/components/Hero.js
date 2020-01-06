@@ -4,13 +4,9 @@ import Img from "gatsby-image"
 import GatsbyImage from "gatsby-image"
 
 const HeroWrapper = styled.div`
-  width: 100vw;
   height: 100vh;
   background: ${props => props.theme.colors.bg300};
   color: ${props => props.theme.colors.textColor};
-  position: absolute;
-  top: 0;
-  left: 0;
 `
 const HeroContent = styled.div`
   width: 80%;

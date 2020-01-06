@@ -8,7 +8,7 @@ const LinksWrapper = styled.div`
   overflow: hidden;
   background: ${props => props.theme.colors.bg100};
   color: ${props => props.theme.colors.textColor};
-  margin: 0 auto;
+  margin: 8em auto 0 auto;
   border-radius: 8px;
   box-shadow: ${props => props.theme.shadows.large};
   max-width: 50em;

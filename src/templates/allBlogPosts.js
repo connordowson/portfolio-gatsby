@@ -33,9 +33,6 @@ const blogPost = ({ data }) => {
         <BlogLinksContainer profilePicture={profilePicture}>
           {trail.map((animation, index) => (
             <>
-              {/* <animated.h1 style={animation}>
-                {allPosts[index].node.title}
-              </animated.h1> */}
               <animated.div style={animation}>
                 <AnimatedBlogLink
                   style={animation}

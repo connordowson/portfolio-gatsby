@@ -1,11 +1,10 @@
 import React from "react"
+import styled from "styled-components"
 
-import sectionStyles from "./../styles/section.module.css"
+const SectionWrapper = styled.section`
+  margin: 0 auto;
+`
 
-export default function Section({ children, idName }) {
-  return (
-    <section className={sectionStyles.section} id={idName}>
-      {children}
-    </section>
-  )
+export default function Section({ children }) {
+  return <SectionWrapper>{children}</SectionWrapper>
 }

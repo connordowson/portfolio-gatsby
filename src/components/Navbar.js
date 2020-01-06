@@ -7,7 +7,7 @@ import colors from "../styles/themes/colors"
 import ThemeToggle from "./ThemeToggle"
 
 const NavbarWrapper = styled.header`
-  position: sticky;
+  position: fixed;
   z-index: 10;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@ const NavbarWrapper = styled.header`
   transition: all 0.3s ease-in-out;
 
   svg {
-    height: 54px;
+    height: 56px;
   }
 `
 

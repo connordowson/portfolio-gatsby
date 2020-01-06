@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { FaRegCalendarAlt } from "react-icons/fa"
-import { useSpring, animated } from "react-spring"
+import { animated } from "react-spring"
 
 const LinkWrapper = styled(animated.div)`
   a {

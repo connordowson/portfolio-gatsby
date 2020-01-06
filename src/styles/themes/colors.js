@@ -12,7 +12,7 @@ export default {
   grey900: "#1A202C",
 
   // Accent colours
-  pink: "#ff007a",
+  pink: "#FF2171",
   blue: "#2b6cb0",
   black: "#1d232f",
 }

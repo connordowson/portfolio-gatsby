@@ -29,7 +29,6 @@ const options = {
       console.log(node)
       let { fields, sys } = node.data.target
       return <RenderEmbeddedContent fields={fields} sys={sys} />
-      // return <h1>{node.data.target.sys.contentType.sys.id}</h1>
     },
   },
 }

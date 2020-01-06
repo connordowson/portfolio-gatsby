@@ -9,6 +9,8 @@ export default {
     textColor: colors.grey100,
     pink: colors.pink,
     blue: colors.blue,
+    bg: colors.grey900,
+    fg: colors.grey100,
   },
   patternBg: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23${colors.grey800.substr(
     1
