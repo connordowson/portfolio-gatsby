@@ -12,36 +12,27 @@ const ProjectWrapper = styled.div`
   margin: 0 auto;
   max-width: 70em;
   display: flex;
+  flex-direction: column;
   box-shadow: ${props => props.theme.shadows.large};
   border-block-start: 8px solid ${props => props.theme.colors.pink};
   border-radius: 8px;
   overflow: hidden;
+`
 
-  @media (max-width: ${props => props.theme.responsive.large}) {
-    width: 70em;
-  }
-
-  @media (max-width: ${props => props.theme.responsive.medium}) {
-    width: 40em;
-  }
-
-  @media (max-width: ${props => props.theme.responsive.small}) {
-    width: 100%;
-  }
-
-  &:not(:last-of-type) {
-    margin-bottom: 2em;
-  }
+const ProjectImage = styled(Image)`
+  height: 16rem;
+  width: 100%;
 `
 
 const ProjectInfo = styled.div`
   background: ${props => props.theme.colors.bg100};
-  /* border-radius: 8px;
-  box-shadow: ${props => props.theme.shadows.large};
-  overflow: hidden; */
-  flex: 3;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* justify-content: space-between; */
+
   & > div,
-  & > h2 {
+  & > h3 {
     padding: 2rem;
   }
 
@@ -50,36 +41,12 @@ const ProjectInfo = styled.div`
   }
 `
 
-const ProjectImage = styled(Image)`
-  /* flex: 0 1; */
-  /* object-position: top center;
-  object-fit: cover;
-  height: max-content; */
-  flex: 1;
-  overflow: hidden;
-  > picture img {
-    height: auto !important;
-  }
-  > img {
-    height: auto !important;
-  }
-  > * {
-    padding-bottom: 0 !important;
-  }
-`
-
-const Test = styled.div`
-  background: red;
-  /* height: 100%; */
-  overflow: hidden;
-`
-
 const TechnologiesWrapper = styled.div`
-  margin-top: 1em;
   div {
     display: inline-flex;
     align-items: center;
     margin-right: 1.6em;
+    margin-top: 2rem;
 
     svg {
       height: 22px;
@@ -91,15 +58,26 @@ const TechnologiesWrapper = styled.div`
 
 const ProjectLink = styled.a`
   display: inline-flex;
-  align-items: center;
-  padding: 0.8em;
+  justify-content: center;
+  padding: 0.8rem 1.2rem;
   border-radius: 4px;
   text-decoration: none;
   background: ${props => props.theme.colors.fg};
   color: ${props => props.theme.colors.bg};
-  margin-right: 1em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
+  width: calc(50% - 1rem);
+
+  &:hover {
+    color: ${props => props.theme.colors.pink};
+  }
+`
+
+const LinksWrapper = styled.div`
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 `
 
 const Project = ({ project }) => {
@@ -114,8 +92,16 @@ const Project = ({ project }) => {
 
   return (
     <ProjectWrapper>
+      <ProjectImage
+        fluid={image.fluid}
+        imgStyle={{
+          objectFit: "cover",
+          objectPosition: "center top",
+          height: "100%",
+        }}
+      />
       <ProjectInfo>
-        <Heading headingSize={2}>{title}</Heading>
+        <Heading headingSize={3}>{title}</Heading>
         <div>
           <div
             dangerouslySetInnerHTML={{
@@ -131,20 +117,11 @@ const Project = ({ project }) => {
             ))}
           </TechnologiesWrapper>
         </div>
-        <div>
+        <LinksWrapper>
           {demoLink && <ProjectLink href={demoLink}>View Demo</ProjectLink>}
-
           {gitHubLink && <ProjectLink href={gitHubLink}>View Code</ProjectLink>}
-        </div>
+        </LinksWrapper>
       </ProjectInfo>
-      <ProjectImage
-        fluid={image.fluid}
-        imgStyle={{
-          objectFit: "cover",
-          objectPosition: "center top",
-          height: "100%",
-        }}
-      />
     </ProjectWrapper>
   )
 }

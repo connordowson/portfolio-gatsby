@@ -23,12 +23,11 @@ const About = () => {
 
   return (
     <div className={aboutStyles.aboutWrapper}>
-      {" "}
       <div className={aboutStyles.aboutText}>
         <p>
-          Hi I'm Connor and I'm a front end web developer based in Bristol. When I'm not
-          making websites I enjoy watching Liverpool and Exeter Chiefs, or
-          listening to music. Check out what I've been listening to below!
+          Hi I'm Connor and I'm a front end web developer based in Bristol. When
+          I'm not making websites I enjoy watching Liverpool and Exeter Chiefs,
+          or listening to music. Check out what I've been listening to below!
         </p>
       </div>
       <div>
