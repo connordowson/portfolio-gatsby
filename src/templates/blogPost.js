@@ -30,7 +30,7 @@ const blogPost = ({ data }) => {
   return (
     <Layout>
       <Helmet>
-        <title>{title}</title>
+        <title>{title} | Connor Dowson</title>
         <meta charSet="utf-8" />
       </Helmet>
 

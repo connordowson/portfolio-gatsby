@@ -18,8 +18,8 @@ const HeroContent = styled.div`
 
   svg {
     position: absolute;
-    bottom: -60px;
-    right: -60px;
+    bottom: -70px;
+    right: -70px;
     fill: ${props => props.theme.colors.pink};
     z-index: 1;
     width: 300px;
@@ -46,12 +46,11 @@ const HeroText = styled.div`
 `
 
 const HeroImage = styled(GatsbyImage)`
-  width: 400px;
-  height: 500px;
+  width: 320px;
+  height: 400px;
   position: relative;
   z-index: 2;
-
-  /* margin: 2em; */
+  border-radius: 6px;
 `
 
 const Hero = ({ heroImage }) => (

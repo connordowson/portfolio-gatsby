@@ -10,7 +10,6 @@ import Hero from "./../components/Hero"
 import ProjectsContainer from "./../components/ProjectsContainer"
 import Project from "./../components/Project"
 import TopTracksContainer from "./../components/TopTracksContainer"
-import SpotifyTrack from "./../components/SpotifyTrack"
 
 const homePage = ({ data }) => {
   const [topTracks, setTopTracks] = useState(false)
@@ -30,7 +29,7 @@ const homePage = ({ data }) => {
   return (
     <Layout>
       <Helmet>
-        <title>Connor Dowson portfolio</title>
+        <title>Portfolio | Connor Dowson</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
@@ -53,21 +52,7 @@ const homePage = ({ data }) => {
         <Heading headingSize={2} sectionHeading>
           What I've been listening to!
         </Heading>
-        <TopTracksContainer>
-          {topTracks &&
-            Array.from(topTracks).map((track, index) => {
-              return (
-                <SpotifyTrack
-                  key={index}
-                  title={track.name}
-                  artist={track.artists[0].name}
-                  imageURL={track.album.images[1].url}
-                  audioURL={track.preview_url}
-                  listenURL={track.external_urls.spotify}
-                />
-              )
-            })}
-        </TopTracksContainer>
+        <TopTracksContainer topTracks={topTracks ? topTracks : null} />
       </Container>
     </Layout>
   )

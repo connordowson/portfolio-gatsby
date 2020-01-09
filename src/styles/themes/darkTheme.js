@@ -1,5 +1,8 @@
 import baseTheme from "./baseTheme"
 import colors from "./colors"
+// ${colors.grey800.substr(
+//   1
+// )}
 export default {
   ...baseTheme,
   colors: {

@@ -20,8 +20,6 @@ const TrackWrapper = styled.div`
     right: 0;
     height: 100%;
     border-radius: 0 8px 8px 0;
-    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
   }
 `
 
@@ -32,7 +30,7 @@ const TrackInfo = styled.div`
 
 const TrackTitle = styled.p`
   font-weight: 600;
-  /* font-size: 1.2rem; */
+  font-size: 1.2rem;
   margin-bottom: 4px;
   white-space: nowrap;
   overflow: hidden;

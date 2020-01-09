@@ -34,18 +34,17 @@ const NavbarContents = styled.nav`
   }
 
   div ul li {
-    margin-left: 2em;
     display: inline;
-    font-size: 1.2em;
-    text-decoration: none;
-    padding: 0.8em 1em;
-    background: ${props => props.theme.colors.pink};
-    border-radius: 8px;
   }
 
   div ul li a {
-    color: ${colors.grey100};
+    margin-left: 2rem;
+    font-size: 1.2rem;
     text-decoration: none;
+    padding: 0.8rem 1rem;
+    background: ${props => props.theme.colors.pink};
+    border-radius: 8px;
+    color: ${colors.grey100};
   }
 `
 
@@ -76,9 +75,6 @@ export default function Navbar({ pageType }) {
                 </li>
                 <li>
                   <Link to="#aboutme"> About </Link>
-                </li>
-                <li>
-                  <Link to="mailto:connormwdowson@gmail.com"> Contact </Link>
                 </li>
                 <li>
                   <Link to="/blog"> Blog </Link>
