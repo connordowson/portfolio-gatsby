@@ -17,11 +17,17 @@ const ProjectWrapper = styled.div`
   border-block-start: 8px solid ${props => props.theme.colors.pink};
   border-radius: 8px;
   overflow: hidden;
+  @media (max-width: ${props => props.theme.responsive.small}) {
+    width: 100%;
+  }
 `
 
 const ProjectImage = styled(Image)`
   height: 16rem;
   width: 100%;
+  @media (max-width: ${props => props.theme.responsive.small}) {
+    display: none;
+  }
 `
 
 const ProjectInfo = styled.div`
@@ -75,6 +81,9 @@ const ProjectLink = styled.a`
 
 const LinksWrapper = styled.div`
   margin-top: auto;
+  @media (max-width: ${props => props.theme.responsive.small}) {
+    margin-top: 0;
+  }
   display: flex;
   justify-content: space-between;
   text-align: center;

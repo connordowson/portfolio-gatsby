@@ -9,17 +9,24 @@ const HeroWrapper = styled.div`
   color: ${props => props.theme.colors.textColor};
 `
 const HeroContent = styled.div`
-  width: 80%;
+  padding: 3em 9em;
   height: 100%;
+  width: 70em;
   margin: 0 auto;
   display: flex;
-  justify-content: space-center;
+  justify-content: space-between;
   align-items: center;
+
+  @media (max-width: ${props => props.theme.responsive.small}) {
+    width: 100%;
+    padding: 8em 2em;
+    flex-direction: column;
+  }
 
   svg {
     position: absolute;
-    bottom: -70px;
-    right: -70px;
+    bottom: -20px;
+    right: -20px;
     fill: ${props => props.theme.colors.pink};
     z-index: 1;
     width: 300px;
@@ -29,8 +36,12 @@ const HeroContent = styled.div`
 
 const HeroText = styled.div`
   font-size: 2.2em;
-  margin: 2em;
-  max-width: 50%;
+  width: 50%;
+
+  @media (max-width: ${props => props.theme.responsive.small}) {
+    font-size: 1em;
+    width: 100%;
+  }
 
   a {
     color: ${props => props.theme.colors.pink};
@@ -51,6 +62,12 @@ const HeroImage = styled(GatsbyImage)`
   position: relative;
   z-index: 2;
   border-radius: 6px;
+
+  @media (max-width: ${props => props.theme.responsive.small}) {
+    min-height: 10%;
+    min-width: 100%;
+    margin-top: 2em;
+  }
 `
 
 const Hero = ({ heroImage }) => (
@@ -64,14 +81,14 @@ const Hero = ({ heroImage }) => (
           <a href="mailto:connormwdowson@gmail.com">message?</a>
         </p>
       </HeroText>
-      <div style={{ position: "relative" }}>
+      <div>
         <HeroImage
           objectFit="cover"
           objectPosition="center"
           fluid={heroImage}
           alt=""
         />
-        <svg viewBox="0 0 100 100">
+        {/* <svg viewBox="0 0 100 100">
           <defs>
             <pattern
               height="100"
@@ -203,7 +220,7 @@ const Hero = ({ heroImage }) => (
             </pattern>
           </defs>
           <path fill="url(#a)" d="M0 0h100v100H0z" />
-        </svg>
+        </svg> */}
       </div>
     </HeroContent>
   </HeroWrapper>

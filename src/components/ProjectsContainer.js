@@ -11,6 +11,13 @@ const ProjectsWrapper = styled.div`
     width: 50em;
   }
 
+  @media (max-width: ${props => props.theme.responsive.small}) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+
   grid-auto-rows: 1fr;
   grid-gap: 2rem;
   max-width: 90rem;

@@ -33,6 +33,12 @@ const NavbarContents = styled.nav`
     display: flex;
   }
 
+  div ul {
+    @media (max-width: ${props => props.theme.responsive.small}) {
+      display: none;
+    }
+  }
+
   div ul li {
     display: inline;
   }
